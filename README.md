@@ -1,6 +1,6 @@
-# OpenClaw Workspace Organizer
+# 🦞 OpenClaw Workspace Organizer 🦞
 
-A comprehensive script to organize, secure, and backup any OpenClaw workspace.
+A comprehensive script to organize, secure, and backup any OpenClaw workspace. Built by and for the OpenClaw 🦞 community.
 
 ## 🚀 Quick Start
 
@@ -27,10 +27,10 @@ curl -sSL https://raw.githubusercontent.com/dazeb/openclaw-workspace-organizer/m
 - Organizes memory files
 - Creates project directories
 
-### 2. **Advanced Security Configuration**
+### 2. **Advanced Security Configuration** 🦞
 - Comprehensive `.gitignore` with security rules
 - **Advanced Security Scanner** with AI threat detection
-- **Prompt Injection Detection** - identifies jailbreak attempts
+- **Prompt Injection Detection** - identifies jailbreak attempts 🦞
 - **Dark Pattern Detection** - finds deceptive UX patterns
 - **Secret Scanning** - detects exposed API keys and credentials
 - **Code Injection Detection** - finds potential malware
@@ -43,7 +43,7 @@ curl -sSL https://raw.githubusercontent.com/dazeb/openclaw-workspace-organizer/m
 - Health check script
 - Cron job setup for automated backups
 
-### 4. **GitHub Integration**
+### 4. **GitHub Integration** 🦞
 - Creates private GitHub repository
 - Configures git remote
 - Pushes initial commit
@@ -357,4 +357,4 @@ Last updated: 2026-02-04
 
 ---
 
-*Created with ❤️ for the OpenClaw community*
+*Created with ❤️ for the OpenClaw 🦞 community*
