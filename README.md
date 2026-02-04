@@ -27,23 +27,39 @@ curl -sSL https://raw.githubusercontent.com/dazeb/openclaw-workspace-organizer/m
 - Organizes memory files
 - Creates project directories
 
-### 2. **Advanced Security Configuration** 🦞
-- Comprehensive `.gitignore` with security rules
-- **Advanced Security Scanner** with AI threat detection
-- **Prompt Injection Detection** - identifies jailbreak attempts 🦞
-- **Dark Pattern Detection** - finds deceptive UX patterns
-- **Secret Scanning** - detects exposed API keys and credentials
-- **Code Injection Detection** - finds potential malware
-- Prevents accidental secret commits
-- GitHub repository setup with private visibility
+## 🛡️ **MAIN FEATURE: Advanced AI Security Scanner** 🛡️
 
-### 3. **Backup System**
+### ⚠️ **THIS IS WHY YOU NEED THIS TOOL!**
+
+**Security is the #1 concern for AI developers.** Our advanced security scanner is the **main feature** that sets this organizer apart. It's not just about organizing files - it's about **protecting your AI workspace from real threats**.
+
+### 🔒 **Comprehensive Security Features:**
+
+#### 🛡️ **AI-Specific Threat Detection**
+- **Prompt Injection Detection** - Identifies jailbreak attempts, "DAN" patterns, and system prompt overrides
+- **Dark Pattern Detection** - Finds deceptive UX patterns and psychological manipulation
+- **Model Manipulation Detection** - Catches attempts to alter AI behavior parameters
+- **Training Data Poisoning Indicators** - Flags potential backdoor triggers
+
+#### 🛡️ **Traditional Security Scanning**
+- **Secret Scanning** 🚨 - Detects exposed API keys (OpenAI, Google, GitHub), passwords, and tokens
+- **Code Injection Detection** - Finds potential malware, eval() exploits, and unsafe deserialization
+- **Web Security Issues** - Identifies XSS, CSRF patterns, and unsafe web practices
+- **Data Exfiltration Detection** - Flags unauthorized data transmission attempts
+
+#### 🛡️ **Workspace Protection**
+- Comprehensive `.gitignore` with security rules to prevent accidental secret commits
+- File permission checks and security audits
+- GitHub repository setup with **private visibility by default**
+- Automated security reporting with actionable recommendations
+
+### 2. **Backup System**
 - Git repository initialization
 - Daily backup script
 - Health check script
 - Cron job setup for automated backups
 
-### 4. **GitHub Integration** 🦞
+### 3. **GitHub Integration**
 - Creates private GitHub repository
 - Configures git remote
 - Pushes initial commit
@@ -114,7 +130,7 @@ workspace/
 | `quick-security-scan.sh` | Quick critical threat scan | `./scripts/quick-security-scan.sh` |
 | `quick-check.sh` | Quick status check | `./scripts/quick-check.sh` |
 
-## 🔒 Advanced Security Features
+## 🛡️ Advanced Security Features 🛡️
 
 ### .gitignore Rules
 - Blocks common secret patterns (API keys, passwords, tokens)
@@ -122,45 +138,52 @@ workspace/
 - Prevents large binary files
 - Excludes temporary and cache files
 
-### Advanced Security Scanner
+### 🛡️ **USING THE SECURITY SCANNER** 🛡️
+
+**This is the most important feature!** Run these scans regularly to protect your AI workspace:
+
 ```bash
-# Run comprehensive security scan
+# 🚨 COMPREHENSIVE SECURITY SCAN (8-phase threat detection)
 ./scripts/security-scan.sh [directory] [report-file] [verbose]
 
-# Quick critical threat scan
+# ⚡ QUICK CRITICAL THREAT SCAN (Fast detection of exposed secrets & prompt injection)
 ./scripts/quick-security-scan.sh [directory]
 ```
 
-### Threat Detection Categories:
+**🔒 SECURITY FIRST:** Always run the security scanner before committing code or deploying AI applications!
 
-#### 1. **Prompt Injection & Jailbreak Detection**
+### 🛡️ **THREAT DETECTION CATEGORIES** 🛡️
+
+**Our scanner detects these critical threats:**
+
+#### 🛡️ **1. Prompt Injection & Jailbreak Detection**
 - Direct injection attempts ("ignore previous instructions")
 - Indirect injection techniques
 - Known jailbreak patterns (DAN, AIM, STAN)
 - Role switching attempts
 - System prompt overrides
 
-#### 2. **Dark Pattern Detection**
+#### 🛡️ **2. Dark Pattern Detection**
 - Psychological manipulation patterns
 - False urgency and scarcity tactics
 - Hidden costs and forced continuity
 - Deceptive UI/UX patterns
 - Bait-and-switch techniques
 
-#### 3. **Secret & Credential Detection**
+#### 🛡️ **3. Secret & Credential Detection**
 - OpenAI API keys (sk-*)
 - Google API keys (AIza*)
 - GitHub tokens
 - Private keys (RSA, DSA, EC)
 - Passwords in configuration
 
-#### 4. **AI-Specific Threats**
+#### 🛡️ **4. AI-Specific Threats**
 - Model parameter manipulation
 - Training data poisoning indicators
 - Adversarial example patterns
 - Model stealing techniques
 
-#### 5. **Code Injection & Malware**
+#### 🛡️ **5. Code Injection & Malware**
 - Shell injection vectors (system(), exec(), eval())
 - Unsafe deserialization
 - Web security issues (innerHTML, document.write)
