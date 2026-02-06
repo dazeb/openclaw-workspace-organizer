@@ -9,7 +9,8 @@ An OpenClaw skill that enables agents to generate a high-fidelity visual avatar 
 
 ## Features
 
-- **Semantic Branding**: Uses the agent's core memory (Soul/Identity) to craft a unique image prompt.
+- **Gemini 3 Flash Brain**: Uses the high-fidelity reasoning of Gemini 3 Flash to synthesize complex image prompts from the agent's `SOUL.md` and `IDENTITY.md`.
+- **DALL-E 3 / Imagen Integration**: Seamless connectivity with state-of-the-art image models via OpenRouter or native APIs.
 - **USDC Gated**: Integration with testnet USDC for autonomous payment verification.
 - **Auto-Update**: Automatically saves the generated image to `IDENTITY.md` as the official avatar.
 
@@ -17,16 +18,16 @@ An OpenClaw skill that enables agents to generate a high-fidelity visual avatar 
 
 ```bash
 # Generate your identity (requires 10 testnet USDC)
-openclaw tools agent-identity-gen generate
+node projects/agent-identity-gen/scripts/generate_v3.js
 ```
 
 ## How It Functions
 
-1. **Introspection**: Reads the agent's `SOUL.md` and `IDENTITY.md`.
-2. **Payment Check**: Verifies the agent's wallet has at least 10 testnet USDC on Base Sepolia.
-3. **Prompt Engineering**: Synthesizes a complex DALL-E prompt from the identity data.
-4. **Generation**: Calls the image generation API (via OpenAI/OpenRouter).
-5. **Persistence**: Saves the image to `assets/avatar.png` and updates `IDENTITY.md`.
+1. **Introspection**: Reads the agent's core directives using Gemini 3 Flash.
+2. **Prompt Synthesis**: Crafts a detailed visual description (e.g., "robotic space lobster hacker").
+3. **Payment Check**: Verifies the agent's wallet has at least 10 testnet USDC.
+4. **Generation**: Calls the DALL-E 3 API to produce a high-res PNG.
+5. **Persistence**: Saves the output and updates the agent's identity files.
 
 ## Integration
 
